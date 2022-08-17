@@ -1,16 +1,19 @@
 // when user scrolls, executes sticky navbar
-window.onscroll = function() {myFunction()};
+window.onscroll = function () {
+  myFunction();
+};
 
-var header = document.getElementById("Pacific Vacations Club");
+var nav = document.getElementById("nav");
 
 // offetting navbar
-var sticky = header.offsetTop;
+var sticky = head.offsetTop;
 
 // sticky element for the main navigation
 function myFunction() {
   if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {a
-    header.classList.remove("sticky");
+    navbar.classList.add("sticky");
+  } else {
+    a;
+    navbar.classList.remove("sticky");
   }
 }
