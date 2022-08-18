@@ -14,10 +14,10 @@
         <h1>Samuel Gerungan</h1>
         <nav>
           <ul>
-            <li><a href="about-me">About Me</a></li>
-            <li><a href="work">Work</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#work">Work</a></li>
             <!-- <li><a href="personal">Personal</a></li> -->
-            <li><a href="contact">Contact</a></li>
+            <li><a href="#Contact">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -27,6 +27,7 @@
 
     <main>
       <section class="about" id="about-me">
+        <div id="about-me" class="navigation"></div>
         <div class="main">
           <img src="./assets/Self Portrait.jpg" alt="self-portrait" />
           <div style="display: inline-block; vertical-align: top">
@@ -49,11 +50,71 @@
       </section>
 
       <!-- portfolio section  -->
+
+      <div class="work">
+        <div id="work" class="navigation"></div>
+        <div class="work-title">
+          <h3>Projects</h3>
+        </div>
+
+        <div class="horiseon">
+          <div class="horiseon-title">
+            <h4>Horiseon Refactor</h4>
+          </div>
+
+          <div class="box">
+            <div class="card">
+              <a href="https://sam-t-g.github.io/Horiseon-Project/">
+                <img
+                  src="./assets/horiseonproject.png"
+                  alt="horiseon project photo and link"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="placeholder1">
+          <div class="placeholder-title">
+            <h5>Placeholder1 Title</h5>
+          </div>
+
+          <div class="box2">
+            <div class="card2">
+              <img
+                src="./assets/Foggy Moutain.jpg" 
+                alt="placeholder image for second project on display"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="placeholder2">
+          <div class="placeholder-title">
+            <h5>Placeholder2 Title</h6>
+          </div>
+
+          <div class="box2">
+            <div class="card2">
+              <img
+                src="./assets/Bali Sunset.jpg"
+                alt="placeholder image for second project on display"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
     </main>
 
     <footer>
-      <p>Contact</p>
-      <script src="./assets/script.js"></script>
+
+      <div id="Contact" class="navigation"></div>
+      <div class="Contact">
+        <div class="Contact">
+          <h6>Contact Me</h6>
+        </div>
+
     </footer>
   </body>
 </html>

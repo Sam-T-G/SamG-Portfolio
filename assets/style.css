@@ -42,6 +42,7 @@ nav a {
 
 nav a:hover {
   color: #fff;
+  text-decoration: underline;
 }
 
 /* Page content */
@@ -95,12 +96,74 @@ h2 {
   padding: 1%;
 }
 
+.work {
+  background-color: #13293d;
+  color: #fff;
+  width: 100%;
+  max-width: 100%;
+  padding: 20px;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+
+.work-title {
+  font-size: 55px;
+  font-weight: bold;
+  padding: 20px;
+}
+
+.card img {
+  max-width: 90%;
+  height: auto;
+  width: 700px;
+}
+
+.horiseon-title {
+  font-size: 37.5px;
+  font-weight: bold;
+  justify-content: center;
+  padding: 10px;
+}
+
+.placeholder-title {
+  font-size: 25px;
+  padding: 10px;
+}
+
+.box2 img {
+  max-width: 80%;
+  height: auto;
+  width: 350px;
+}
+
+.Contact {
+  background-color: #ffffff;
+  color: #13293d;
+  width: 100%;
+  max-width: 100%;
+  padding: 100px;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+
+.Contact h6 {
+  font-size: 40px;
+  font-weight: bold;
+  padding: 35px;
+}
+
+
+
 @media screen and (max-width: 768px) {
   body {
     flex-direction: column;
   }
 
-  .card {
-    margin-left: 0;
+@media screen and (max-width: 980px) {
+  body {
+    flex-direction: column;
   }
+
 }
