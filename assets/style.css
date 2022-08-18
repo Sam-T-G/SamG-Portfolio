@@ -5,6 +5,7 @@
   box-sizing: border-box;
 }
 
+/* Nav elements */
 .header {
   display: flex;
   justify-content: space-between;
@@ -26,8 +27,7 @@ nav ul {
   justify-content: space-between;
   list-style: none;
   float: right;
-  margin: 0%;
-  padding: 1%;
+  margin: 0px 30px;
   min-width: 300px;
 }
 
@@ -37,7 +37,7 @@ nav a {
   font-weight: bold;
   text-decoration: none;
   justify-content: space-between;
-  padding: 1.75px;
+  padding: 1.85px;
 }
 
 nav a:hover {
@@ -45,22 +45,25 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* Page content */
+/*  Experimental segment with JS, not functional yet  */
+/* Page content
 /* .content {
   padding: 16px;
 } */
 
 /* The sticky class is added to the header with JS when it reaches its scroll position */
-.sticky {
+/* .sticky {
   position: sticky;
   top: 0%;
-}
+} */
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
+/* .sticky + .content {
   padding-top: 100px;
-}
+} 
+*/
 
+/*  --about me segment-- */
 .about {
   color: #13293d;
   width: 100%;
@@ -99,6 +102,8 @@ h2 {
   padding: 1%;
 }
 
+/* --works segment--*/
+
 .work {
   background-color: #13293d;
   color: #fff;
@@ -112,10 +117,10 @@ h2 {
 }
 
 .work-title {
-  text-align: left;
+  position: relative;
   font-size: 55px;
   font-weight: bold;
-  padding: 20px;
+  padding: 20px 150px 20px 20px;
 }
 
 .card img {
@@ -144,6 +149,7 @@ h2 {
   width: 350px;
 }
 
+/* --Contact Me Segment-- */
 .Contact {
   background-color: #ffffff;
   color: #13293d;
@@ -184,14 +190,22 @@ h2 {
   width: 100%;
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    flex-direction: column;
+/* --screen flexibility elements-- */
+
+@media screen and (min-width: 768px) {
+  .card-column {
+    flex: 0 0 50%;
+    max-width: 50%;
   }
 }
 
-@media screen and (max-width: 980px) {
-  body {
-    flex-direction: column;
+@media screen and (min-width: 992px) {
+  header {
+    width: 100%;
+  }
+
+  .card-column {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
   }
 }
